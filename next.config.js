@@ -4,7 +4,8 @@ const glob = require('glob')
 module.exports = {
   exportPathMap: function () {
     return {
-      '/': { page: '/' }
+      '/': { page: '/'},
+      '/tabs': { page: '/tabs' }
     }
   },
   webpack: function (config, { dev }) {

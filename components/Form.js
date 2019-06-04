@@ -1,4 +1,4 @@
-const Form = (props) => {
+const Form = ({ children }) => {
 
     let fields = ['firstName', 'lastName', 'address'];
 
@@ -18,6 +18,7 @@ const Form = (props) => {
             <input id="idfromurl" name="idfromurl" type="hidden" />
             <br />
             <button type="submit" class="btn btn-primary">Submit</button>
+            { children }
         </form>
     );
 }
